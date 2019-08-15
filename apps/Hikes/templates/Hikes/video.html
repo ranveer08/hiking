@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title> Best Hikes Around Washington </title>
+      {% load static %}
+      <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+      <link rel="stylesheet" href="{% static 'Hikes/css/index.css' %}">
+      <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+      <script src="{% static 'Hikes/js/index.js' %}"></script>
+          
+   </head>
+   <body>
+      <div id="wrapper">
+         <header>
+            <h1>Best Hikes Around Washington</h1>
+         </header>
+         <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/weather">WEATHER</a></li>
+            <li><a href="/gallery">GALLERY</a></li>
+            <li><a href="/video" class="active">VIDEOS</a></li>
+            <li><a href="/_map">MAP</a></li>
+            <li><a href="/about">ABOUT</a></li>
+         </ul>
+         <p>
+            Attitude, in every phase of the thru-hike process, is as important as any physical, logistical or technological
+            element. From the first weeks of planning your pilgrimage, to your first and last days on the trail, maintaining
+            an open mind and a resilient attitude in dealing with obstacles is crucial.
+            More than anything, a continued focus on taking small steps in the direction of the goal, is your most potent
+            weapon in confronting mishap, fear, doubt and weariness.
+         </p>
+         <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/TiJXfyQjPX4?ecver=1"
+            frameborder="0" allowfullscreen></iframe>
+         <br>
+         <h2>Tips on hiking mechanics</h2>
+         <p>Shorten your stride on uphills to save your hip flexors</p>
+         <p>Shorten your stride on downhills to keep your center of mass over your lead foot and avoid slips outs</p>
+         <p>Lace your shoes properly to minimize blisters that are produced by foot movement in the shoe</p>
+         <p>Use trekking poles to lighten the impact on your knees
+         </p>
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/FcBlGb0qgS8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <br>
+         <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+         <footer>
+            copyright &copy; 2019 Hike Production
+         </footer>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Hikes</title>
+      {% load static %}
+      <link rel="stylesheet" href="{% static 'Hikes/css/index.css' %}">
+      <link rel="stylesheet" type="text/css" media="screen"
+         href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css"/>
+      <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+      <script
+         src="https://code.jquery.com/jquery-3.4.1.min.js"
+         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+         crossorigin="anonymous"></script>
+      <script src="{% static 'Hikes/js/index.js' %}"></script>
+   </head>
+   <body>
+      <div id="wrapper">
+         <header>
+            <h1>Best Hikes Around Washington</h1>
+         </header>
+         <ul>
+            <li><a class="active" href="/">HOME</a></li>
+            <li><a href="/weather">WEATHER</a></li>
+            <li><a href="/gallery">GALLERY</a></li>
+            <li><a href="/video">VIDEOS</a></li>
+            <li><a href="/_map">MAP</a></li>
+            <li><a href="/about">ABOUT</a></li>
+         </ul>
+         <h2>Rattlesnake Ledge (Snoqualmie Pass)</h2>
+         <p>
+            Difficulty: Easy<br>
+            Length: 4 miles roundtrip<br>
+            For a short and relatively easy day hike, it doesn't get much better than a gently-sloping trail through old
+            growth forest, a view over Snoqualmie Pass and the Southern Cascades, and a trailhead only 40 minutes east of
+            Seattle. The hike starts off on the shores of Rattlesnake Lake and cuts through a series of switchbacks that
+            rise 1,000 feet over 1.5 miles. The path is steadily uphill but never overly difficult, which means that the
+            ledge is crowded on weekends and sunny summer days (it's a great option for watching the sunset after work or as
+            a trail run). Before or after the hike, the lake itself is a great place to relax, walk, swim, and fish. For
+            tougher hikes near the city, popular Little Si and Mount Si (below) across the valley are similar but slightly
+            more challenging.
+         </P>
+         <div>
+            <img class="photo" src="{% static 'Hikes/images/Rattlesnake.jpg' %}" alt="Rattleshake">
+         </div>
+         <br>
+         <h2>Little Si and Mount Si (Snoqualmie Pass)</h2>
+         <p>
+            Difficulty: Easy; moderate<br>
+            Length: 5 miles; 8 miles<br>
+            The easy access to Little Si and Mount Si make them two of the highly-trafficked day hikes in the Seattle area.
+            We like Little Si best, which is a 5-mile roundtrip excursion with around 1,200 feet in elevation gain. The
+            forested path is excellent and there are a number of interesting rock formations along the way (it's also very
+            popular for climbing). The top has good views of North Bend, the Upper Snoqualmie Valley, and Mount Si hovering
+            above to the north. Mount Si is a more involved day hike at a distance of 8 miles roundtrip and with an
+            elevation gain of around 3,150 feet. It's not that Mount Si isn't a really nice hike, it's just that we think
+            there are better options for that kind of effort (see Granite Mountain below).
+         </p>
+         <div>
+            <img class="photo" src="{% static 'Hikes/images/si.jpg' %}" alt="si">
+         </div>
+         <br>
+         <h2>Mt. Pilchuck (Mountain Loop Highway)</h2>
+         <p>
+            Difficulty: Moderate<br>
+            Length: 5.4 miles roundtrip<br>
+            For a moderate one-day summit from Seattle, it's tough to find a better hike than the one up Mt. Pilchuck.
+            Located on the Mountain Loop Highway just over an hour north of downtown, this hike offers big-time scenery
+            quickly and will not disappoint. You rise with views of the North Cascades and classic alpine terrain, finally
+            curling around the summit for huge expanses including the Olympic Peninsula, Puget Sound, San Juan Islands, and
+            Mt. Rainier. This hike is only 5.4 miles roundtrip but relatively steep and therefore intermediate in
+            difficulty.
+         </p>
+         <div>
+            <img class="photo" src="{% static 'Hikes/images/Mt.jpg' %}" alt="Mt">
+         </div>
+         <p>
+            The biggest issue with Mt. Pilchuck is the crowds. In many ways, this is the mini-Mt. Everest of Seattle-we'hv
+            hiked it on a clear summer Sunday and literally been in a line of 30-40 hikers near the top. Even on a blustery
+            February weekday we came across 20-30 hikers battling snow and ice along the way. This doesn't mean that you
+            shouldn't do Mt. Pilchuck, just try to get up early. If you can depart your Seattle home by 6am, grab a double
+            latte, and hit the road, you can be at the trailhead by 7:30am. By doing this you will avoid the vast majority
+            of people. Show up at 11am and you may see your neighbors and coworkers up there too.
+         </p>
+         <br>
+         <h2>Ebey's Landing (Whidbey Island)</h2>
+         <p>
+            Start: End of Cook Road to the Prairie Overlook trailhead<br>
+            Difficulty: Moderate<br>
+            Length: Up to 5.6 miles roundtrip<br>
+            Perched on the western shore of Whidbey Island with views of the Olympic Mountains and Strait of San Juan de
+            Fuca, Ebey's Landing is our favorite Washington coastal hike.
+            Named after Issac Ebey who built the island's first settlement, this trail passes high along the bluff with
+            excellent opportunities for wildlife watching, including bald eagles soaring along the cliffs, seals and sea
+            lions playing in the surf, and even orca pods feeding on salmon in the summer.
+            Toward the end of the bluff, the trail intersects the original and restored homestead from 1850 before
+            zigzagging down the side of the cliff to the stony beach (an easier option is to return the same way via the
+            high side of the bluff).
+            This is a superb early morning and sunset hike, although it's excellent anytime the views are clear.
+         </p>
+         <div>
+            <img class="photo" src="{% static 'Hikes/images/ebey.jpg' %}" alt="ebey">
+         </div>
+         <br>
+         <h2>Summerland (Mt. Rainier National Park)</h2>
+         <p>
+            Start: Mt. Rainier National Park—White River Entrance<br>
+            Difficulty: Moderate<br>
+            Length: 8.4 miles roundtrip<br>
+            If you can only do one summer full-day hike in Washington, the hike to Summerland in Mt.
+            Rainier National Park is your best bet.
+            This pristine alpine meadow is the starting point for climbers heading up Mt. Rainier's southern slopes and one
+            of the best places in the state to view wildflowers.
+            The trail passes upward through old-growth forests along the White River until the trees give way to spectacular
+            mountain vistas.
+            Summerland, which is 4.2 miles from the trailhead, is an open meadow full of marmots, wildflowers, and
+            spectacular views of Mt. Rainier.
+            For those looking for more mileage, Panhandle Gap is another 1.4 miles from Summerland.
+            This is a popular trail and it's best to get started early before the bulk of the crowds arrive.
+            Camping is possible in Summerland but spaces are limited and drawn via lottery months in advance.
+         </p>
+         <div>
+            <img class="photo" src="{% static 'Hikes/images/paradise.jpg' %}" alt="paradise">
+         </div>
+         <br>
+         <h2>Chain Lakes Loop (North Cascades/Mt. Baker)</h2>
+         <p>
+            Start: End of the Mt. Baker Highway<br>
+            Difficulty: Moderate<br>
+            Length: 8 miles<br>
+            The Chain Lakes Loop offers a grand tour of the North Cascades: towering peaks, wildflower meadows, shimmering
+            lakes, and great views of Mt. Baker and Shuksan.
+            From the Bagley Lakes Trailhead, the path leads past a series of lakes-some still bordered by snow late into the
+            year-and up the Herman Saddle.
+            The trail then navigates the pass between Table Mountain and Ptarmigan Ridge before continuing to Artist Point.
+            Famous for the imagery of Mt. Shuksan reflecting in its waters, Artist Point is one of the highlights of hiking
+            in the North Cascades.
+            For those who don't have time for the entire loop, it's also possible to park at the Artist Point lot and go
+            directly to the lake (when the road is open).
+            The Chain Lakes Loop is crowded on summer weekends but much less so during the week.
+         </p>
+         <div>
+            <img class="photo" src="{% static 'Hikes/images/chain.jpg' %}" alt="chain">
+         </div>
+         <br>
+         <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+         <footer>
+            copyright &copy; 2019 Hike Production
+         </footer>
+      </div>
+   </body>

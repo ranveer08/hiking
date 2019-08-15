@@ -1,0 +1,388 @@
+/* header */
+header {
+    background-image: url(../images/pic2.jpg);
+    margin-left: 115px;
+    width: 650px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: groove;
+    border-radius: 25px 0px 25px;
+}
+
+header > h1 {
+    font-family: 'Damion', cursive;
+    font-size: 40px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-shadow: 2px 2px #2C2C2C;
+    line-height: 125px;
+    text-align: center;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    /* The typwriter cursor */
+   white-space: nowrap; /* Keeps the content on a single line */
+   letter-spacing: .10em; /* Adjust as needed */
+   animation: 
+     typing 3.5s steps(40, end),
+     blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  
+
+.login {
+    text-align: right;
+    height: 20px;
+    font-size: 20px;
+    font-family: 'Lemonada', cursive;
+}
+
+.login a {
+    text-decoration: none;
+    color: #eee;
+}
+
+.login a:hover {
+    color: grey;
+}
+
+.button {
+    text-decoration: none;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #2C2C2C;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px 0px 25px;
+}
+
+.button:hover {
+    background-color: #080808;
+}
+
+
+/* wrapper */
+#wrapper {
+    width: 900px;
+    height: 100%;
+    background-color: #404040;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    border-radius: 25px;
+    border: groove;
+
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+body {
+    color: #666666;
+    background-image: url(../images/pic2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-color: #f0f0f1;
+
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* menu list */
+
+
+ul {
+    list-style: none;
+    text-align: center;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+ul li {
+    display: inline;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 10px;
+    font-family: 'Lemonada', cursive;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #eee;
+}
+
+ul li a:hover {
+    color: grey;
+}
+
+
+li a.active {
+    color: grey;
+}
+
+/* home */
+.photo {
+    position: relative;
+    top: 50%;
+    right: -25%;
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 25px;
+    border: groove;
+
+}
+
+/* footer */
+footer {
+    clear: both;
+    color: #ffffff;
+    background-color: #404040;
+    margin: auto;
+    height: 20px;
+    width: 900px;
+    font-size: 100%;
+    border-radius: 25px 0px 25px;
+    border: groove;
+    text-align: center;
+}
+
+/* gallery */
+a.fancybox img {
+    border: 5px solid #D6DBDF;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.6);
+    -o-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+a.fancybox:hover img {
+    position: relative;
+    z-index: 999;
+    -o-transform: scale(1.03, 1.03);
+    -ms-transform: scale(1.03, 1.03);
+    -moz-transform: scale(1.03, 1.03);
+    -webkit-transform: scale(1.03, 1.03);
+    transform: rotate(-15deg) scale(1.5);
+}
+
+table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* video */
+.video {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 560px;
+    border: 10px outset #ddd;
+    border-radius: 25px 0px 25px;
+}
+
+/* survey */
+.survey_form > p {
+    text-align: left;
+}
+
+.survey_form > p > input[type="radio"] {
+    margin-top: -1px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.survey_form > div {
+    text-align: center;
+    margin: 10px;
+}
+
+/* registration */
+form.register {
+    width: 30%;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid #B0C4DE;
+    background: #404040;
+    border-radius: 0px 0px 10px 10px;
+    border: groove;
+    color: white;
+}
+
+.input-group {
+    margin: 10px 0px 10px 0px;
+}
+
+.input-group label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+}
+
+.input-group input {
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.input-group select {
+    height: 30px;
+    width: 97%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+
+.btn {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: #404040;
+    border: groove;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #666;
+    border: 1px solid #FFFFFF;
+    color: #fff;
+}
+
+.error {
+    width: 92%;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid #a94442;
+    color: #a94442;
+    background: #f2dede;
+    border-radius: 5px;
+    text-align: left;
+}
+
+/* table */
+table.users_table, .users_table th, .users_table td {
+    border: 1px solid #282828;
+    border-collapse: collapse;
+}
+
+.users_table {
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+
+
+.users_table th, .users_table td {
+    padding: 5px;
+    text-align: center;
+}
+
+/* search form */
+form.search_form {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.search_field {
+    display: flex;
+    width: 50%;
+}
+
+.search_field input{
+    flex: 1;
+}
+
+.search_field input, .search_field button {
+    border: 1px solid rgba(147, 128, 108, 0.25);
+    padding: 0.5em 0.75em;
+
+}
+
+/* error */
+.error {
+    width: 92%;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid #a94442;
+    background: #f2dede;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.error p {
+    font-family: sans-serif;
+    color: #ff2c27;
+}
+
+/* barchart */
+div#poll-results  {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+
+}
+
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: #DDD;
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 0px 10px 10px 0px;
+    border: solid;
+}
+#back2Top:hover {
+    background-color: #DDF;
+    color: #000;
+}

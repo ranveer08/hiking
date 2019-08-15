@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Login and Registration</title>
+      {% load static %}
+      <link rel="stylesheet" href="{% static 'Hikes/css/register.css' %}">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   </head>
+   <body>
+      <div id = 'wrapper'>
+         <div class="register">
+            <div id="messages">
+               {% if messages %}
+               <ul class="messages">
+                  {% for message in messages %}
+                  <li class="{{ message.tags }}">{{ message }}</li>
+                  {% endfor %}
+               </ul>
+               {% endif %}
+            </div>
+         <div class="register">
+            <form class = "register" action = "/loginProcess" method = 'POST'>
+               {% csrf_token %}
+               <h2>Login | <a href="/register">Register</a></h2>
+               <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" value="">
+                 </div>
+                 <div class="input-group">
+                        <label label="password">Password</label>
+                        <input type="password" name="password">
+                     </div>
+               <p><input class = 'button' type="submit" name = "submit" value = "Login"></p>
+            </form>
+         </div>
+      </div>
+   </body>
+   </body>
+</html>
