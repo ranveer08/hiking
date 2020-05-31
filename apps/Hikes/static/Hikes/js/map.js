@@ -33,7 +33,7 @@ function onSuccess(position)
   var localAddress = document.getElementById("destination").value.replace(" ","+");
 
   var xmlhttpAddr = new XMLHttpRequest();
-  var url = "https://maps.googleapis.com/maps/api/geocode/json?address="+ localAddress + "&secretkey";
+  var url = "https://maps.googleapis.com/maps/api/geocode/json?address="+ localAddress + "&key=AIzaSyBjYhRDGmMvVz4zHppFaWkMLMuS_u_ZyXs";
   xmlhttpAddr.open("GET", url, false);
   xmlhttpAddr.send();
 

@@ -1,33 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
    <head>
-      <meta charset="utf-8">
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <title>Hikes</title>
       {% load static %}
-      <link rel="stylesheet" href="{% static 'Hikes/css/index.css' %}">
+      <link rel="stylesheet"  href="{% static 'Hikes/css/index.css' %}"/>
       <link rel="stylesheet" type="text/css" media="screen"
          href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css"/>
-      <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <script
          src="https://code.jquery.com/jquery-3.4.1.min.js"
          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
          crossorigin="anonymous"></script>
       <script src="{% static 'Hikes/js/index.js' %}"></script>
+      <script src="{% static 'Hikes/js/nav.js' %}"></script>
+
    </head>
    <body>
       <div id="wrapper">
          <header>
             <h1>Best Hikes Around Washington</h1>
          </header>
-         <ul>
-            <li><a class="active" href="/">HOME</a></li>
-            <li><a href="/weather">WEATHER</a></li>
-            <li><a href="/gallery">GALLERY</a></li>
-            <li><a href="/video">VIDEOS</a></li>
-            <li><a href="/_map">MAP</a></li>
-            <li><a href="/about">ABOUT</a></li>
-         </ul>
+         <div class="topnav" id="myTopnav">
+            <a class="active" href="/">HOME</a>
+            <a href="/weather">WEATHER</a>
+            <a href="/gallery">GALLERY</a>
+            <a href="/video">VIDEOS</a>
+            <a href="/_map">MAP</a>
+            <a href="/about">ABOUT</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
          <h2>Rattlesnake Ledge (Snoqualmie Pass)</h2>
          <p>
             Difficulty: Easy<br>
@@ -73,7 +80,7 @@
             difficulty.
          </p>
          <div>
-            <img class="photo" src="{% static 'Hikes/images/Mt.jpg' %}" alt="Mt">
+            <img class="photo" src="{% static 'Hikes/images/mt.jpg' %}" alt="mt">
          </div>
          <p>
             The biggest issue with Mt. Pilchuck is the crowds. In many ways, this is the mini-Mt. Everest of Seattle-we'hv
@@ -146,7 +153,8 @@
          <br>
          <a id="back2Top" title="Back to top" href="#">&#10148;</a>
          <footer>
-            copyright &copy; 2019 Hike Production
+            copyright &copy; 2020 Hike Production
          </footer>
       </div>
    </body>
+</html>
