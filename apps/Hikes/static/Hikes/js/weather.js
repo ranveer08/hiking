@@ -11,7 +11,7 @@ $(document).ready(function(){
     if(city != ''){
 
        $.ajax({
-          url: 'http://api.openweathermap.org/data/2.5/weather?q=' + city + "&units=imperial" + "&appid=ba28266f4c21ac7e9d12b1414b59d1a9",
+          url: 'http://api.openweathermap.org/data/2.5/weather?q=' + city + "&units=imperial" + "&key",
           type: "GET",
           dataType: "jsonp",
           success: function(data){
