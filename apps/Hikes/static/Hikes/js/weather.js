@@ -7,17 +7,19 @@ $(document).ready(function(){
  });
 
  function getWeather(){
+
     var city = $('#city').val();
     if(city != ''){
 
        $.ajax({
-          url: 'http://api.openweathermap.org/data/2.5/weather?q=' + city + "&units=imperial" + "&key",
+          url: 'http://api.openweathermap.org/data/2.5/weather?q=' + city + "&units=imperial" + "&KEY",
           type: "GET",
           dataType: "jsonp",
           success: function(data){
              var widget = showResults(data)
              $("#showWeather").fadeIn(3000).html(widget);
              $("#city").val('');
+             $("#error").html('');
           }
 
        });
@@ -28,6 +30,7 @@ $(document).ready(function(){
 
  }
  function showResults(data){
+
     return "<h2>Current Weather for "+data.name+" "+data.sys.country+"</h2>"+
     "<p><img src='http://openweathermap.org/img/wn/"+data.weather[0].icon+".png'>"+
     "<p>Weather: "+data.weather[0].main+"</p>"+

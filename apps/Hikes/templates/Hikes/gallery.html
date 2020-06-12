@@ -15,13 +15,18 @@
          src="https://code.jquery.com/jquery-3.4.1.min.js"
          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
          crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
       <script src="{% static 'Hikes/js/index.js' %}"></script>
       <script src="{% static 'Hikes/js/nav.js' %}"></script>
    </head>
    <body>
       <div id="wrapper">
          <header>
-            <h1>Best Hikes Around Washington</h1>
+            <h1 class="ml6">
+               <span class="text-wrapper">
+                 <span class="letters">Best Hikes Around Washington</span>
+               </span>
+             </h1>
          </header>
          <div class="topnav" id="myTopnav">
             <a href="/">HOME</a>
@@ -127,5 +132,6 @@
             $.noConflict();
          </script>
       </div>
+      <script src="{% static 'Hikes/js/headerAnimation.js' %}"></script>
    </body>
 </html>

@@ -20,16 +20,8 @@ def index(request):
     return render(request, "Hikes/index.html", context)
 
 def weather(request):
-    if 'user_id' not in request.session:
-        # messages.error(request,'You must be logged in')
-        return render(request, "Hikes/weather.html")
-        
-    user_id = request.session['user_id']
-    current_user = User.objects.get(id=user_id)
-    context = {
-        'user': current_user
-    }
-    return render(request, "Hikes/weather.html", context)
+
+    return render(request, "Hikes/weather.html" )
 
 def gallery(request):
     if 'user_id' not in request.session:
@@ -56,8 +48,8 @@ def video(request):
     return render(request, "Hikes/video.html", context)
 
 def _map(request):
-
-    return render(request, "Hikes/map.html")
+    mapKey = "KEY"
+    return render(request, "Hikes/map.html", {'mapKey': mapKey})
 
 def get_data(request):
     user_id = request.session['user_id']

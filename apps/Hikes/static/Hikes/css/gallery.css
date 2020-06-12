@@ -3,21 +3,17 @@
         width: auto;
         /* background-color: red; */
     }
-
     body header {
         margin-left: auto;
         width: auto;
-        
     }
-   body header > h1 {
+   body .ml6 {
         font-size: 15px;
         line-height: 180px;
     }
-
     body #head {
         width: auto;
     }
-
     body footer {
         width: auto;
     }
@@ -34,23 +30,34 @@ header {
     border-radius: 25px 0px 25px;
 }
 
-header > h1 {
-    font-family: 'Damion', cursive;
-    font-size: 40px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 500;
-    color: #FFFFFF;
-    text-shadow: 2px 2px #2C2C2C;
-    line-height: 125px;
-    text-align: center;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    /* The typwriter cursor */
-   white-space: nowrap; /* Keeps the content on a single line */
-   letter-spacing: .10em; /* Adjust as needed */
-   animation: 
-     typing 3.5s steps(40, end),
-     blink-caret .75s step-end infinite;
+.ml6 {
+  position: relative;
+  font-weight: 500;
+  font-size: 40px ;
+  line-height: 125px;
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: block;
+  font-family: 'Damion', cursive;
+  font-style: normal;
+  font-variant: normal;
+  text-shadow: 2px 2px #2C2C2C;
+  /* padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em; */
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+  color: #FFFFFF;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
 }
 
 @keyframes typing {
@@ -67,14 +74,12 @@ header > h1 {
 /* wrapper */
 #wrapper {
     width: 900px;
-    /* height: 100%; */
     background-color: #404040;
     margin-left: auto;
     margin-right: auto;
     padding: 30px;
     border-radius: 25px;
     border: groove;
-
 }
 
 h2 {
@@ -85,11 +90,14 @@ h2 {
 body {
     color: #666666;
     background-image: url(../images/pic2.jpg);
-    background-repeat: no-repeat;
     background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
     background-color: #f0f0f1;
-
+    min-height: 100%;
+    line-height: 1.75em;
+    height: 100vh;
 }
 
 p {
@@ -107,7 +115,6 @@ p {
     max-height: 50%;
     border-radius: 25px;
     border: groove;
-
 }
 
 /* footer */
@@ -115,9 +122,8 @@ footer {
     clear: both;
     color: #ffffff;
     background-color: #404040;
-    margin-left: auto;
-    margin-right: auto;
-    height: 20px;
+    margin: auto;
+    height: 30px;
     width: 900px;
     font-size: 100%;
     border-radius: 25px 0px 25px;
@@ -160,16 +166,6 @@ a.fancybox:hover img {
     flex-wrap: wrap; 
     justify-content: center;
 }
-
-/* .flexBox > div {
-    
-    width: 100px; 
-    height:100px; 
-    margin: 10px; 
-    font-size: 40px; 
-} */
-
-
 
 #back2Top {
     width: 40px;
